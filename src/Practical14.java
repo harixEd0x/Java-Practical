@@ -1,5 +1,3 @@
-package com.testing.firetvremote.practical;
-
 import java.util.ArrayList;
 import java.util.Date;
 
