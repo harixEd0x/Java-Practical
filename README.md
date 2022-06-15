@@ -17,3 +17,40 @@ public class Practical1 {
     }
 }
 ```
+
+#### Output
+```text
+------------ Data Features ------------
+
+X1: EMA
+X2: SSO
+
+---------------------------------------
+
+----------- Model Arguments -----------
+
+kernel: rbf
+C: 1
+gamma: 10
+
+---------------------------------------
+
+---------  Engine Conditions ----------
+
+Training: 2013-03-01 -- 2015-12-09
+Testing:  2015-12-10 -- 2017-02-17
+Buy Threshold: 65.0%
+Sell Threshold: 65.0%
+Continued Training: False
+
+---------------------------------------
+
+------------- Statistics --------------
+
+Total Buys: 170
+Buy Accuracy: 68.24%
+Total Sells: 54
+Sell Accuracy: 59.3%
+
+---------------------------------------
+```
