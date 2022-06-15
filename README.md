@@ -20,37 +20,101 @@ public class Practical1 {
 
 #### Output
 ```text
------------- Data Features ------------
 
-X1: EMA
-X2: SSO
+Welcome to java
+Learning java now
+Programming  is fun
 
----------------------------------------
-
------------ Model Arguments -----------
-
-kernel: rbf
-C: 1
-gamma: 10
-
----------------------------------------
-
----------  Engine Conditions ----------
-
-Training: 2013-03-01 -- 2015-12-09
-Testing:  2015-12-10 -- 2017-02-17
-Buy Threshold: 65.0%
-Sell Threshold: 65.0%
-Continued Training: False
-
----------------------------------------
-
-------------- Statistics --------------
-
-Total Buys: 170
-Buy Accuracy: 68.24%
-Total Sells: 54
-Sell Accuracy: 59.3%
-
----------------------------------------
 ```
+
+## JAVA Practical 2
+Write a program that solves the following equation and displays the value x and y:
+1) 3.4x+50.2y=44.5
+2) 2.1x+.55y=5.9
+(Assume Cramer’s rule to solve equation ax+by=e x=ed-bf/ad-bc cx+dy=f y=af-ec/ad-bc )
+
+```java
+import java.util.Scanner;
+
+public class Practical2 {
+    static double a, b, c, d, e, f, x, y;
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Values from Equestion:- 1 :");
+        System.out.print("Enter value of a : ");
+        double a = input.nextDouble();
+        System.out.print("Enter value of b : ");
+        double b = input.nextDouble();
+        System.out.print("Enter value of e : ");
+        double e = input.nextDouble();
+
+        System.out.println("Values from Equestion:- 2 :");
+        System.out.print("Enter value of c : ");
+        double c = input.nextDouble();
+        System.out.print("Enter value of d : ");
+        double d = input.nextDouble();
+        System.out.print("Enter value of f : ");
+        double f = input.nextDouble();
+
+
+        x = ((e * d) - (b * f)) / ((a * d) - (b * c));
+        y = ((a * f) - (e * c)) / ((a * d) - (b * c));
+
+        System.out.print(" X = "+ x + " Y = " + y);
+    }
+}
+```
+
+#### Output
+```text
+
+Values from Equestion:- 1 :
+Enter value of a : 3.2
+Enter value of b : 50.2
+Enter value of e : 44.5
+Values from Equestion:- 2 :
+Enter value of c : 2.1
+Enter value of d : .55
+Enter value of f : 5.9
+ X = 2.6211171136407483 Y = 0.7193710206444143
+
+```
+## JAVA Practical 3
+Write a program that reads a number in meters, converts it to feet, and displays the result.
+
+```java
+import java.util.Scanner;
+public class Practical3 {
+    static double meter;
+    static double feet;
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number : ");
+        meter = input.nextDouble();
+        func(meter)
+
+    }
+
+    private static void func(double meter) {
+        feet = meter * 3.28084;
+        System.out.print(meter + " Meters = " + feet + " Feets");
+    }
+}
+```
+
+#### Output
+```text
+
+Enter the number : 
+10
+10.0 Meters = 32.8084 Feets
+
+```
+
+
+
