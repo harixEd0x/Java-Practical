@@ -37,7 +37,7 @@ public class Practical11 {
     }
 
 
-    public class Fuctions {
+    public static class Fuctions {
         public static int[][] create_fill_matrix() {
             int[][] matrix = new int[6][6];
             for (int i = 0; i < 6; i++) {
