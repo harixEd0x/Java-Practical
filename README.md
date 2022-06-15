@@ -3,7 +3,7 @@
   Java Practical
 </h1>
 <h4 align="center">Go to src for practical!</h4>
-<h4 align="center">Be sure to :star: my configuration repo so you can keep up to date on any daily progress!</h4>
+<h4 align="center">:star: Star us on GitHub — it motivates us a lot!</h4>
 <div align="center"><img src="https://gitee.com/duhouan/ImagePro/raw/master/logo.png" width="250px"/></div>
 
 ## JAVA Practical 1
@@ -676,6 +676,10 @@ Enter Binary Value : 1010
 Decimal Value = 10
 
 ```
+
+## Credits and contributions
+
+- [Hari Moradiya](https://github.com/harixEd0x) I used IntelliJ IDEA for this.
 
 
 
