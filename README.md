@@ -1,6 +1,7 @@
-# Java-Practical
-
-Go to src for practical
+<h1 align="center">
+  <br>
+  Java Practical
+</h1>
 
 <div align="center"><img src="https://gitee.com/duhouan/ImagePro/raw/master/logo.png" width="250px"/></div>
 
