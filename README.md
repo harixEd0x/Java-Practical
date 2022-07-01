@@ -677,6 +677,58 @@ Decimal Value = 10
 
 ```
 
+## JAVA Practical 16
+Write a program that prompts the user to enter a decimal number and displays the number in a fraction. Hint: Read the decimal number as a string, extract the integer part and fractional part from the string.
+
+```java
+public class Fraction {
+
+    private int real,imaginary;
+
+    public Fraction(int real, int imaginary) {
+        this.real = real;
+        this.imaginary = imaginary;
+    }
+
+    public long gcm(long a, long b) {
+        return b == 0 ? a : gcm(b, a % b);
+    }
+    public String toString() {
+        long gcm = gcm(real, imaginary);
+        return real/gcm+"/"+imaginary/gcm;
+    }
+}
+```
+
+```java
+import java.util.Scanner;
+
+public class Practical16 {
+    private static Fraction fraction;
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a decimal number");
+        String decimal = input.nextLine();
+        int indexOfDecimal = decimal.indexOf(".");
+        int len = decimal.substring(indexOfDecimal).length();
+        int imag_part=(int) Math.pow(10,len-1);
+        int real_part=(int)(Double.parseDouble(decimal)*imag_part);
+        fraction = new Fraction(real_part,imag_part);
+        System.out.println("The Fraction number is "+ fraction);
+    }
+}
+```
+
+#### Output
+```text
+
+Enter a decimal number
+10.23
+The Fraction number is 1023/100
+
+```
+
 ## Credits and contributions
 
 - [Hari Moradiya](https://github.com/harixEd0x) I used IntelliJ IDEA for this.
