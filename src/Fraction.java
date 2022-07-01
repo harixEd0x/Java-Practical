@@ -1,5 +1,3 @@
-package com.android.controls.prac;
-
 public class Fraction {
 
     private int real,imaginary;
