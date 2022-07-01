@@ -1,5 +1,3 @@
-package com.android.controls.prac;
-
 import java.util.Scanner;
 
 public class Practical16 {
